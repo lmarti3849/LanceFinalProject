@@ -17,6 +17,12 @@ namespace MusicStoreLance.Models
 
     public class MusicContext : DbContext
     {
+        public MusicContext():base("AlbumContext")
+        {
+
+        }
+
         public DbSet<Album> Album { get; set; }
+
     }
 }
